@@ -8,8 +8,8 @@ import java.util.List;
 
 @Repository
 public interface DaoStudent {
-
-
-
+    List<StudentEntity> readAll();
+    StudentEntity readStudentByName(String firstName);
+    StudentEntity writeDatabase();
 
 }
