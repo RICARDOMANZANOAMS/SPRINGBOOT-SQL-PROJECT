@@ -6,10 +6,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+
 public interface DaoStudent {
     List<StudentEntity> readAll();
-    StudentEntity readStudentByName(String firstName);
-    StudentEntity writeDatabase();
+    List<StudentEntity> readStudentByName(String firstName);
+    StudentEntity writeDatabase(StudentEntity studentEntity);
 
 }
