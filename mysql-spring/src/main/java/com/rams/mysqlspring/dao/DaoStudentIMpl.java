@@ -32,7 +32,6 @@ public class DaoStudentIMpl implements DaoStudent{
     @Override
     @Transactional
     public StudentEntity writeDatabase(StudentEntity studentEntity) {
-        studentEntity.setId(0);
         StudentEntity studentCurrent=entityManager.merge(studentEntity);
         return studentCurrent;
     }
